@@ -16,10 +16,12 @@ const config: Config = {
 			colors: {
 				"card-bg": "var(--card-bg)",
 				"card-border": "var(--card-border)",
+				hover: "var(--hover)",
 			},
 			borderRadius: {
 				"4xl": "2rem",
 			},
+			display: ["group-hover"],
 		},
 	},
 	plugins: [],
