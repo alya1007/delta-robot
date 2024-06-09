@@ -10,6 +10,7 @@ export default function Home() {
 				<h1 className="text-3xl font-medium">Delta Sort</h1>
 				<div className="flex justify-end w-full gap-10">
 					<VideoCard src="/images/camera-placeholder.jpg" />
+					<Logs />
 				</div>
 				<Statistics />
 			</div>

@@ -5,14 +5,22 @@
 :root {
 	--foreground: #e5e2dd;
 	--background: #1e1a1d;
-	--max-width: 1440px;
+	--max-width: 1300px;
 
 	--card-bg: #262428;
 	--card-border: #2f3136;
+	--card-bg-light: #676668;
 
 	--hover: #000000;
 
 	--divider: #d9d9d9;
+
+	--error-text: #fe3033;
+	--error-bg: ##fee6e6;
+	--success-text: #3da159;
+	--success-bg: #e9f5ea;
+	--info-text: #d4d639;
+	--info-bg: #fbfae6;
 }
 
 body {

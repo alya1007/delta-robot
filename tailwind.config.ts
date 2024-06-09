@@ -16,8 +16,15 @@ const config: Config = {
 			colors: {
 				"card-bg": "var(--card-bg)",
 				"card-border": "var(--card-border)",
+				"card-bg-light": "var(--card-bg-light)",
 				hover: "var(--hover)",
 				divider: "var(--divider)",
+				"error-text": "var(--error-text)",
+				"error-bg": "var(--error-bg)",
+				"success-text": "var(--success-text)",
+				"success-bg": "var(--success-bg)",
+				"info-text": "var(--info-text)",
+				"info-bg": "var(--info-bg)",
 			},
 			borderRadius: {
 				"4xl": "2rem",
