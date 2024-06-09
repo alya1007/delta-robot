@@ -6,6 +6,9 @@
 	--foreground: #e5e2dd;
 	--background: #1e1a1d;
 	--max-width: 1440px;
+
+	--card-bg: #262428;
+	--card-border: #2f3136;
 }
 
 body {
