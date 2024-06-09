@@ -17,6 +17,7 @@ const config: Config = {
 				"card-bg": "var(--card-bg)",
 				"card-border": "var(--card-border)",
 				hover: "var(--hover)",
+				divider: "var(--divider)",
 			},
 			borderRadius: {
 				"4xl": "2rem",
