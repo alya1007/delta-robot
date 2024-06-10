@@ -25,6 +25,7 @@ const config: Config = {
 				"success-bg": "var(--success-bg)",
 				"info-text": "var(--info-text)",
 				"info-bg": "var(--info-bg)",
+				"button-hover": "var(--button-hover)",
 			},
 			borderRadius: {
 				"4xl": "2rem",

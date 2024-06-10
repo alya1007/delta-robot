@@ -1,12 +1,16 @@
+"use client";
+
 import Image from "next/image";
+import { useVideo } from "@/context/VideoContext"; // Update the import path accordingly
 
 type VideoCardProps = {
 	src: string;
 	videoSrc: string;
-	showVideo: boolean;
 };
 
-const VideoCard = ({ src, videoSrc, showVideo }: VideoCardProps) => {
+const VideoCard = ({ src, videoSrc }: VideoCardProps) => {
+	const { showVideo } = useVideo();
+
 	return (
 		<div className="h-[370px] w-full ">
 			{showVideo ? (
