@@ -8,17 +8,18 @@ import Image from "next/image";
 import { useVideo } from "@/context/VideoContext"; // Update the import path accordingly
 
 const Logs = () => {
-	const logs = [
-		{ name: "hdpe", total: 650 },
-		{ name: "pet", total: 234 },
-		{ name: "pvc", total: 132 },
-		{ name: "poly", total: 688 },
-		{ name: "ldpe", total: 435 },
-		{ name: "other", total: 112 },
-	];
 	const { setShowVideo } = useVideo();
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [isRunning, setIsRunning] = useState<boolean>(false);
+	const [redItems, setRedItems] = useState<number>(0);
+	const [greenItems, setGreenItems] = useState<number>(0);
+
+	const logs = [
+		{ name: "green", total: greenItems },
+		{ name: "red", total: redItems },
+		{ name: "yellow", total: 0 },
+		{ name: "white", total: 0 },
+	];
 
 	const handleClick = () => {
 		setIsLoading(true);
@@ -26,6 +27,8 @@ const Logs = () => {
 			setShowVideo(true);
 			setIsLoading(false);
 			setIsRunning(true);
+			setRedItems(1);
+			setGreenItems(2);
 		}, 3000);
 	};
 
