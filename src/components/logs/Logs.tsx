@@ -18,28 +18,30 @@ const Logs = () => {
 	];
 	const { setShowVideo } = useVideo();
 	const [isLoading, setIsLoading] = useState<boolean>(false);
+	const [isRunning, setIsRunning] = useState<boolean>(false);
 
 	const handleClick = () => {
 		setIsLoading(true);
 		setTimeout(() => {
 			setShowVideo(true);
 			setIsLoading(false);
+			setIsRunning(true);
 		}, 3000);
 	};
 
 	return (
 		<Card className="w-full flex-col gap-5">
-			<div className="flex gap-5">
+			<div className="flex gap-5 w-full">
 				<button
 					onClick={handleClick}
-					className="uppercase bg-success-text px-20 font-semibold rounded-3xl hover:bg-button-hover transition-all duration-300 ease-in-out"
+					className=" uppercase bg-success-text px-10 font-semibold rounded-3xl hover:bg-button-hover transition-all duration-300 ease-in-out"
 				>
 					{isLoading ? (
 						<Image
 							src={"/images/spinner.gif"}
 							alt="spinner gif"
-							width={100}
-							height={100}
+							width={75}
+							height={75}
 						/>
 					) : (
 						"start"
@@ -47,7 +49,11 @@ const Logs = () => {
 				</button>
 				<div className="bg-card-bg-light uppercase px-7 py-4 rounded-3xl flex items-center justify-between gap-4 w-full">
 					<h1 className="font-medium">system status</h1>
-					<Box variant="success">running</Box>
+					{
+						<Box variant={isRunning ? "success" : "error"}>
+							{isRunning ? "running" : "stopped"}
+						</Box>
+					}
 				</div>
 			</div>
 			<div className="bg-card-bg-light uppercase px-7 py-6 rounded-3xl grid grid-cols-2 w-full gap-x-6 gap-y-2">

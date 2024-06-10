@@ -12,7 +12,7 @@ const VideoCard = ({ src, videoSrc }: VideoCardProps) => {
 	const { showVideo } = useVideo();
 
 	return (
-		<div className="h-[370px] w-full ">
+		<div className="w-full ">
 			{showVideo ? (
 				<video
 					src={videoSrc}
