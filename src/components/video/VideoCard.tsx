@@ -8,11 +8,13 @@ type VideoCardProps = {
 
 const VideoCard = ({ src, videoSrc, showVideo }: VideoCardProps) => {
 	return (
-		<div className="w-full">
+		<div className="h-[370px] w-full ">
 			{showVideo ? (
-				<div className="h-full">
-					<video src={videoSrc} className="rounded-4xl h-[380px]" controls />
-				</div>
+				<video
+					src={videoSrc}
+					className="rounded-4xl w-full h-full object-cover object-center"
+					controls
+				/>
 			) : (
 				<div className="relative h-full">
 					<Image

@@ -12,7 +12,7 @@ const Logs = () => {
 		{ name: "other", total: 112 },
 	];
 	return (
-		<Card className="w-2/4 flex-col gap-5">
+		<Card className="w-full flex-col gap-5">
 			<div className="bg-card-bg-light uppercase px-7 py-4 rounded-3xl flex items-center justify-between gap-4 w-full">
 				<h1 className="font-medium">system status</h1>
 				<Box variant="success">running</Box>
